@@ -5,7 +5,8 @@
   "main": "index.js",
   "type":"module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "loadtest": "autocannon -c 500 -d 30 -w 4 -W [ -c 4 -d 3] --renderStatusCodes http://localhost:8000"
   },
   "keywords": [],
   "author": "Bernard Silva Araujo Wermuth de Carvalho",
